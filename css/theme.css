@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+:root {
+  /* ポケモンカラー */
+  --color-red:    #E3350D;
+  --color-yellow: #FFDE00;
+  --color-blue:   #3B5BA7;
+  --color-dark:   #1a1a2e;
+  --color-white:  #FFFFFF;
+  --color-gray:   #f5f5f5;
+  --color-text:   #222222;
+  --color-muted:  #666666;
+
+  /* グラデーション */
+  --gradient-hero: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  --gradient-card: linear-gradient(145deg, #FFDE00 0%, #E3350D 100%);
+
+  /* タイポグラフィ */
+  --font-base: 'Noto Sans JP', sans-serif;
+
+  /* スペーシング */
+  --section-padding: 5rem 1.5rem;
+  --max-width: 900px;
+
+  /* 角丸・シャドウ */
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
