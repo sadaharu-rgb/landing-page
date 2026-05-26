@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ▼ ページタイトル・説明は変更してください -->
-  <title>koneko9625 | ポケモンカード開封チャンネル</title>
-  <meta name="description" content="毎回本気のポケモンカード開封動画をXで投稿中。当たりもハズレも全部見せます。" />
+  <title>Rei | 観測する人。数字を出す側になる。</title>
+  <meta name="description" content="@Rei_value — 個人開発の観測ログとAI活用記録を発信する観測者。pokeca予測・X測定基盤・AI会議。記録軸で淡々と。" />
+
+  <!-- OGP -->
+  <meta property="og:title" content="Rei | 観測する人。" />
+  <meta property="og:description" content="個人開発の観測ログとAI活用記録。記録軸で淡々と数字を出す。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Rei" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@Rei_value" />
 
   <link rel="stylesheet" href="css/theme.css" />
   <link rel="stylesheet" href="css/style.css" />
@@ -14,164 +21,245 @@
 
   <!-- ===== HEADER ===== -->
   <header class="site-header">
-    <span class="logo">🐱 koneko9625</span>
+    <span class="logo">
+      <span class="logo-mark">◉</span>Rei
+    </span>
     <a class="header-link"
-       href="https://x.com/koneko9625"
+       href="https://x.com/Rei_value"
        target="_blank"
        rel="noopener noreferrer">
-      𝕏 フォローする
+      𝕏 フォロー
     </a>
   </header>
 
   <!-- ===== HERO ===== -->
   <section class="hero">
-    <span class="hero-badge">ポケモンカード開封チャンネル</span>
+    <div class="hero-content">
+      <span class="hero-badge">Observation-First Indie Dev</span>
 
-    <!-- ▼ キャッチコピーが決まったら <h1> の中身を変更してください -->
-    <h1>開封の<span>ドキドキ</span>を、<br>一緒に楽しもう。</h1>
+      <h1>観測する人。<br><span class="accent">数字を出す側</span>になる。</h1>
 
-    <p>毎回本気のポケモンカード開封動画をXで投稿中。<br>当たりもハズレも、全部リアルにお届けします。</p>
+      <p class="lead">
+        @Rei_value — 個人開発の観測ログとAI活用記録を発信。<br>
+        予測示唆ではなく、観測の事実だけを淡々と。
+      </p>
 
-    <a class="btn-primary"
-       href="https://x.com/koneko9625"
-       target="_blank"
-       rel="noopener noreferrer">
-      𝕏 @koneko9625 をフォローする
-    </a>
+      <div class="hero-cta">
+        <a class="btn-primary"
+           href="https://x.com/Rei_value"
+           target="_blank"
+           rel="noopener noreferrer">
+          𝕏 @Rei_value をフォロー
+        </a>
+        <a class="btn-ghost"
+           href="https://note.com/rei_value"
+           target="_blank"
+           rel="noopener noreferrer">
+          note を読む
+        </a>
+      </div>
 
-    <div class="hero-scroll">
-      <span>scroll</span>
-      <span>↓</span>
+      <p class="hero-meta mono">EST. 2026 — Recording in progress</p>
     </div>
   </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="section about">
+  <!-- ===== 観測中の指標 ===== -->
+  <section class="section">
+    <div class="section-inner">
+      <p class="section-label">Observation Log</p>
+      <h2 class="section-title">観測中の指標</h2>
+      <p class="section-desc">
+        運営する個人開発プロジェクトと発信活動の現在の数字。
+        評価ではなく観測の事実として記録します。
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">予測ログ N</span>
+          <span class="stat-value">40<span style="font-size:0.6em;color:var(--color-subtle);"> / 85</span></span>
+          <span class="stat-note">7月再診断まで蓄積中</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">公開note</span>
+          <span class="stat-value">2</span>
+          <span class="stat-note">観測フレーム準拠</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">テスト本数</span>
+          <span class="stat-value">240</span>
+          <span class="stat-note">pokeca-price-monitor</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">稼働cron</span>
+          <span class="stat-value">22</span>
+          <span class="stat-note">drift 防止テスト 3本</span>
+        </div>
+      </div>
+
+      <p class="stats-caption">
+        週次の X投稿KPI（インプレ・保存率・note遷移CTR）は前週比%のみ公開。
+        絶対数の生公開は数字に振り回されない設計のため避けています。
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== 動いているプロジェクト ===== -->
+  <section class="section section-soft">
+    <div class="section-inner">
+      <p class="section-label">Projects</p>
+      <h2 class="section-title">動いているプロジェクト</h2>
+      <p class="section-desc">
+        観測軸の発信を支える個人開発スタック。
+        実装・運用・観測の全部を1人で回しています。
+      </p>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <span class="project-tag">観測対象</span>
+          <h3>pokeca-price-monitor</h3>
+          <p>
+            ポケモンカードの相場を6サイトから収集・観測。異常検知の精度を7月再診断で判定するため、
+            予測機能は意図的に凍結中。Railway本番稼働。
+          </p>
+          <p class="project-meta">Node.js · SQLite · TypeScript · Claude API</p>
+        </div>
+
+        <div class="project-card">
+          <span class="project-tag">運用中</span>
+          <h3>lottery-app</h3>
+          <p>
+            ポケカ抽選販売の情報集約。3層防御の認証設計と冪等な自動シード機構を実装。
+            「自分しか使わないツールもUIを作る」設計思想の実例。
+          </p>
+          <p class="project-meta">Express · Node SQLite · Helmet</p>
+        </div>
+
+        <div class="project-card">
+          <span class="project-tag">設計実験</span>
+          <h3>AI Company HQ</h3>
+          <p>
+            部門別CLAUDE.mdで動くAI経営シミュレータ。CEOが部門意見を統合して
+            意思決定する設計＝Chain of Thoughtの並列実装そのもの。
+          </p>
+          <p class="project-meta">Claude API · 部門エージェント · CoT</p>
+        </div>
+
+        <div class="project-card">
+          <span class="project-tag">観測基盤</span>
+          <h3>X測定基盤・観測日誌</h3>
+          <p>
+            X投稿のインプレ単価・保存率・note遷移CTRを週次でDBに記録。
+            観測日誌シリーズとして毎週日曜に前週比%のみ公開予定。
+          </p>
+          <p class="project-meta">cron · macro平均 · 観測軸</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== note記事 ===== -->
+  <section class="section">
+    <div class="section-inner">
+      <p class="section-label">Notes</p>
+      <h2 class="section-title">読み物</h2>
+      <p class="section-desc">
+        記録軸で書いたnote記事と、観測フレームの実装ログ。
+      </p>
+
+      <div class="notes-grid">
+        <a class="note-card"
+           href="https://note.com/rei_value"
+           target="_blank"
+           rel="noopener noreferrer">
+          <h3>個人開発の観測ログ集（既刊）</h3>
+          <p>
+            実装の失敗・学び・設計判断を記録。観測フレームに準拠してリライト済み。
+          </p>
+          <span class="note-meta">¥300 · 観測フレーム適合</span>
+        </a>
+
+        <a class="note-card"
+           href="https://note.com/rei_value"
+           target="_blank"
+           rel="noopener noreferrer">
+          <h3>Claude Code 自動化パイプライン構築記</h3>
+          <p>
+            開発ログ→X投稿ネタ→週2回のcron→自動配信。
+            「自動化の出口に人レビューを置く」設計の話。
+          </p>
+          <span class="note-meta">¥300 · 観測フレーム適合</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About Rei ===== -->
+  <section class="section about-rei">
     <div class="section-inner">
       <p class="section-label">About</p>
-      <h2 class="section-title">こんなチャンネルです</h2>
-      <p class="section-desc">ポケモンカードの開封動画を投稿しているXアカウント。当たり引いても外れても、リアクションは毎回本気です。</p>
+      <h2 class="section-title">Reiについて</h2>
+      <p class="section-desc">
+        個人開発・観測・記録の3軸で発信する観測者。
+        「予測で稼ぐ」ではなく「観測を積み上げる」運営をしています。
+      </p>
 
-      <div class="about-grid">
-        <div class="about-card">
-          <span class="about-icon">🎴</span>
-          <div>
-            <h3>本気の開封</h3>
-            <p>1パックから大量買いまで、気合を入れて開封します。演出なし、リアクションはすべてガチです。</p>
+      <div class="about-rei-body">
+        <div class="principle">
+          <span class="principle-mark">01</span>
+          <div class="principle-body">
+            <h3>記録軸 / 観測軸</h3>
+            <p>
+              「当たる/外れる/的中率」の評価軸を捨て、「観測した・記録として残す」軸で発信。
+              数字は事実として淡々と扱います。
+            </p>
           </div>
         </div>
-        <div class="about-card">
-          <span class="about-icon">✨</span>
-          <div>
-            <h3>当たり枠を逃さない</h3>
-            <p>SAR・SR・URなどレアカードが出たときは必ずクローズアップ。一緒に興奮してください。</p>
+
+        <div class="principle">
+          <span class="principle-mark">02</span>
+          <div class="principle-body">
+            <h3>予測示唆・売買推奨はしない</h3>
+            <p>
+              ポケカ相場・株式・暗号資産いずれも売買推奨は行いません。
+              観測の公開はしますが、判断は読み手に委ねます。
+            </p>
           </div>
         </div>
-        <div class="about-card">
-          <span class="about-icon">📱</span>
-          <div>
-            <h3>Xで毎回投稿</h3>
-            <p>開封したらすぐXに投稿。フォローしておけばリアルタイムで追えます。</p>
+
+        <div class="principle">
+          <span class="principle-mark">03</span>
+          <div class="principle-body">
+            <h3>事前宣言基準で凍結</h3>
+            <p>
+              予測の精度判定（precision@k≥0.5・FPR≤0.2）は事前宣言した固定基準で機械判定。
+              7月再診断まで収益化は凍結します。
+            </p>
           </div>
         </div>
-        <div class="about-card">
-          <span class="about-icon">💬</span>
-          <div>
-            <h3>一緒に盛り上がろう</h3>
-            <p>リプライ・引用ポストで感想を送ってください。ポケカ好き同士でつながりましょう。</p>
+
+        <div class="principle">
+          <span class="principle-mark">04</span>
+          <div class="principle-body">
+            <h3>透明性をブランドにする</h3>
+            <p>
+              cron稼働数・テスト本数・観測N・前週比KPI まで公開。
+              「数字を出す勇気のある運営」をブランドの中核に置いています。
+            </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ===== HIGHLIGHTS ===== -->
-  <section class="section highlights">
-    <div class="section-inner">
-      <p class="section-label">Highlights</p>
-      <h2 class="section-title">注目の開封動画</h2>
-      <p class="section-desc">これまでの開封の中でも特に熱かった回です。</p>
-
-      <div class="highlights-grid">
-        <!-- ▼ 動画ごとにこのブロックを複製・編集してください -->
-        <!--   href に実際の投稿URL、h3 にタイトル、p に説明を入れてください -->
-        <!--   .highlight-thumb の emoji (🎴) を削除して <img> タグに差し替えるとサムネイル画像を表示できます -->
-
-        <a class="highlight-card" href="https://x.com/koneko9625" target="_blank" rel="noopener noreferrer">
-          <div class="highlight-thumb">
-            🎴
-            <span class="highlight-play">▶</span>
-          </div>
-          <div class="highlight-body">
-            <h3>動画タイトルをここに入力</h3>
-            <p>説明文・弾名・枚数など</p>
-          </div>
-        </a>
-
-        <a class="highlight-card" href="https://x.com/koneko9625" target="_blank" rel="noopener noreferrer">
-          <div class="highlight-thumb">
-            🎴
-            <span class="highlight-play">▶</span>
-          </div>
-          <div class="highlight-body">
-            <h3>動画タイトルをここに入力</h3>
-            <p>説明文・弾名・枚数など</p>
-          </div>
-        </a>
-
-        <a class="highlight-card" href="https://x.com/koneko9625" target="_blank" rel="noopener noreferrer">
-          <div class="highlight-thumb">
-            🎴
-            <span class="highlight-play">▶</span>
-          </div>
-          <div class="highlight-body">
-            <h3>動画タイトルをここに入力</h3>
-            <p>説明文・弾名・枚数など</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== GALLERY ===== -->
-  <section class="section gallery">
-    <div class="section-inner">
-      <p class="section-label">Gallery</p>
-      <h2 class="section-title">神引きギャラリー</h2>
-      <p class="section-desc">これまでに引いた推しカードをまとめました。</p>
-      <!-- ▼ 画像が揃ったらコメントを外して img タグの src を書き換えてください -->
-      <p class="gallery-note">※ 画像は今後追加予定</p>
-
-      <div class="gallery-grid">
-        <!-- ▼ 画像が揃ったら以下の emoji を <img src="images/card1.jpg" alt="カード名"> に差し替えてください -->
-        <div class="gallery-item">✨</div>
-        <div class="gallery-item">⭐</div>
-        <div class="gallery-item">💫</div>
-        <div class="gallery-item">🌟</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA ===== -->
-  <section class="section cta">
-    <div class="section-inner">
-      <h2 class="section-title">フォローして一緒に開封を楽しもう</h2>
-      <p>新しい開封動画はXで即投稿。フォローしておけば見逃しません。</p>
-      <a class="btn-primary"
-         href="https://x.com/koneko9625"
-         target="_blank"
-         rel="noopener noreferrer">
-        𝕏 @koneko9625 をフォロー
-      </a>
     </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
+    <p class="footer-tagline">観測は続く。</p>
     <div class="footer-links">
-      <a href="https://x.com/koneko9625" target="_blank" rel="noopener noreferrer">𝕏 @koneko9625</a>
+      <a href="https://x.com/Rei_value" target="_blank" rel="noopener noreferrer">𝕏 @Rei_value</a>
+      <a href="https://note.com/rei_value" target="_blank" rel="noopener noreferrer">note</a>
+      <a href="https://github.com/sadaharu-rgb" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
-    <p>&copy; 2026 koneko9625. All rights reserved.</p>
+    <p class="footer-copy mono">&copy; 2026 Rei. Recording in progress.</p>
   </footer>
 
 </body>
