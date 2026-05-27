@@ -51,61 +51,50 @@ a {
   letter-spacing: 0.005em;
 }
 
-/* ===== REI SILHOUETTES（rei_visual.md 厳守・薄く・大きく・複数） ===== */
-.rei-silhouette {
+/* ===== REI 公式ポートレート（PNG 大型表示） ===== */
+.rei-portrait {
   position: absolute;
   pointer-events: none;
   user-select: none;
   z-index: 0;
-  filter: drop-shadow(0 0 24px rgba(74, 222, 128, 0.05));
+  border-radius: var(--radius);
 }
 
-/* Hero 右側に大きく・はっきり（アニメ少女の気配を主張） */
-.rei-silhouette--hero-main {
+/* Hero 右側に大型 Rei portrait */
+.rei-portrait--hero {
   top: 50%;
-  right: -4%;
+  right: -8%;
   transform: translateY(-50%);
-  width: clamp(360px, 56vw, 660px);
-  opacity: 0.55;
+  width: clamp(220px, 50vw, 480px);
+  height: auto;
+  opacity: 0.35;
+  mask-image: linear-gradient(to left, #000 50%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to left, #000 50%, transparent 100%);
+  filter: drop-shadow(0 0 32px rgba(74, 222, 128, 0.18));
   animation: float-slow 16s ease-in-out infinite;
 }
 
-/* Hero 左下にサブ（モバイル時は非表示） */
-.rei-silhouette--hero-sub {
-  bottom: -8%;
-  left: -4%;
-  width: clamp(200px, 28vw, 300px);
-  opacity: 0.30;
-  animation: float-slow 22s ease-in-out infinite reverse;
-  display: none;
+@media (min-width: 760px) {
+  .rei-portrait--hero { right: -4%; opacity: 0.55; }
+}
+@media (min-width: 1100px) {
+  .rei-portrait--hero { right: 0%; opacity: 0.85; }
 }
 
-@media (min-width: 900px) {
-  .rei-silhouette--hero-sub { display: block; }
-  .rei-silhouette--hero-main { opacity: 0.68; }
-}
-
-/* About セクションの右下に大型 */
-.rei-silhouette--about {
-  bottom: -6%;
-  right: -8%;
-  width: clamp(340px, 44vw, 560px);
-  opacity: 0.42;
-  z-index: 0;
+/* About 右下に portrait */
+.rei-portrait--about {
+  bottom: -4%;
+  right: -4%;
+  width: clamp(220px, 32vw, 380px);
+  height: auto;
+  opacity: 0.55;
+  mask-image: radial-gradient(ellipse at center, #000 50%, transparent 90%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 50%, transparent 90%);
+  filter: drop-shadow(0 0 24px rgba(74, 222, 128, 0.12));
   animation: float-slow 20s ease-in-out infinite;
 }
 
 .about-rei .section-inner { z-index: 1; position: relative; }
-
-/* Footer 中央上部に薄く（離れすぎない・小さめ） */
-.rei-silhouette--footer {
-  top: -10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: clamp(160px, 20vw, 220px);
-  opacity: 0.30;
-  z-index: 0;
-}
 
 .site-footer .footer-tagline,
 .site-footer .footer-links,
@@ -156,15 +145,20 @@ a {
 
 /* ===== ミニReiチビ（散布用・あちこちに気配を撒く） ===== */
 
-/* section-label の先頭に置く小さいRei */
+/* section-label の先頭に置く小さいRei（公式チビPNG・白背景は mix-blend-mode で消す） */
 .section-mini {
   display: inline-block;
-  width: 22px;
-  height: 22px;
+  width: 32px;
+  height: 32px;
   vertical-align: middle;
-  margin-right: 0.45rem;
-  margin-top: -2px;
-  filter: drop-shadow(0 0 4px rgba(74, 222, 128, 0.3));
+  margin-right: 0.5rem;
+  margin-top: -4px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border-hi);
+  box-shadow: 0 0 12px rgba(74, 222, 128, 0.18);
   animation: rei-bob 4.5s ease-in-out infinite;
 }
 
@@ -181,11 +175,16 @@ a {
   position: absolute;
   top: 0.85rem;
   right: 0.85rem;
-  width: 26px;
-  height: 26px;
-  opacity: 0.55;
-  filter: drop-shadow(0 0 3px rgba(74, 222, 128, 0.25));
-  transition: opacity 0.25s, transform 0.25s;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 50%;
+  background: var(--color-bg-deep);
+  border: 1.5px solid var(--color-border-hi);
+  box-shadow: 0 0 10px rgba(74, 222, 128, 0.20);
+  opacity: 0.9;
+  transition: opacity 0.25s, transform 0.25s, box-shadow 0.25s;
   z-index: 1;
 }
 
@@ -199,7 +198,8 @@ a {
 .project-card:hover .card-mini,
 .note-card:hover .card-mini {
   opacity: 1;
-  transform: rotate(-6deg) scale(1.1);
+  transform: rotate(-6deg) scale(1.15);
+  box-shadow: 0 0 20px rgba(74, 222, 128, 0.45);
 }
 
 /* principle 番号バッジ内に小さく */
@@ -210,20 +210,28 @@ a {
 }
 
 .principle-mini {
-  width: 18px;
-  height: 18px;
-  filter: drop-shadow(0 0 3px rgba(74, 222, 128, 0.4));
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--color-bg-deep);
+  border: 1px solid var(--color-border-hi);
+  box-shadow: 0 0 8px rgba(74, 222, 128, 0.30);
 }
 
 /* footer tagline の左右に並べる */
 .footer-mini {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   vertical-align: middle;
-  margin: 0 0.5rem;
-  opacity: 0.85;
-  filter: drop-shadow(0 0 5px rgba(74, 222, 128, 0.35));
+  margin: 0 0.7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-border-hi);
+  box-shadow: 0 0 14px rgba(74, 222, 128, 0.30);
 }
 
 .footer-mini:first-child {
@@ -261,8 +269,10 @@ a {
 }
 
 .logo-mlogo {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
   filter: drop-shadow(0 0 6px var(--color-accent-glow));
   animation: blink 3.5s ease-in-out infinite;
 }
