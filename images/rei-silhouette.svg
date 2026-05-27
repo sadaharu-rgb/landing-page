@@ -1,120 +1,135 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" fill="none" aria-hidden="true">
   <!--
-    Rei v2（rei_visual.md「Anime girl Rei, black long hair, cat ears, round glasses,
-    green eyes, cool intelligent expression, dark oversized hoodie with neon green accents」）
-    - スカルッぽさを除去・アニメ顔の輪郭明確化
-    - 緑のハイライト多め・「analytical atmosphere」を可視化
-    - 腕組みポーズ（arms crossed）で観測者ポジ
+    Rei v3（公式 REI ANALYTICS リファレンス準拠）
+    - サイドバング明確・アニメ顔・緑袖ロゴ・REIフード文字
+    - 「感情ゼロで、相場を読む」のクール表情
   -->
   <defs>
-    <linearGradient id="hairGradV2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#3a3a55" />
-      <stop offset="1" stop-color="#22223a" />
+    <linearGradient id="hairV3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3a52" />
+      <stop offset="1" stop-color="#1f1f30" />
     </linearGradient>
-    <linearGradient id="hoodGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#22223a" />
-      <stop offset="1" stop-color="#16162a" />
+    <linearGradient id="hoodV3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c1c2e" />
+      <stop offset="1" stop-color="#13131f" />
     </linearGradient>
-    <linearGradient id="faceGrad" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#3d3d56" />
-      <stop offset="1" stop-color="#33334a" />
+    <linearGradient id="faceV3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a4564" />
+      <stop offset="1" stop-color="#3d3a52" />
     </linearGradient>
-    <radialGradient id="eyeGlowV2" cx="0.5" cy="0.5" r="0.6">
-      <stop offset="0" stop-color="#4ade80" stop-opacity="1" />
-      <stop offset="0.6" stop-color="#4ade80" stop-opacity="0.4" />
+    <radialGradient id="eyeV3" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#7df0a8" stop-opacity="1" />
+      <stop offset="0.7" stop-color="#4ade80" stop-opacity="0.6" />
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="cheekV3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4ade80" stop-opacity="0.18" />
       <stop offset="1" stop-color="#4ade80" stop-opacity="0" />
     </radialGradient>
   </defs>
 
-  <!-- フード（後ろ・大きく余裕） -->
-  <path d="M 40 360 Q 60 270 200 260 Q 340 270 360 360 L 380 560 L 20 560 Z"
-        fill="url(#hoodGrad)" stroke="#2c2c45" stroke-width="1.5" />
+  <!-- ===== フード本体（オーバーサイズ） ===== -->
+  <path d="M 30 380 Q 60 290 200 285 Q 340 290 370 380 L 388 560 L 12 560 Z"
+        fill="url(#hoodV3)" stroke="#2a2a40" stroke-width="1.5" />
+  <!-- フード襟 -->
+  <path d="M 85 350 Q 130 325 200 325 Q 270 325 315 350 L 320 395 Q 270 365 200 365 Q 130 365 80 395 Z"
+        fill="#16162a" />
 
-  <!-- フード輪郭（前側・首回り） -->
-  <path d="M 95 340 Q 130 320 200 320 Q 270 320 305 340 L 305 380 Q 270 360 200 360 Q 130 360 95 380 Z"
-        fill="#1a1a2e" />
+  <!-- ===== 腕組み ===== -->
+  <path d="M 60 420 Q 90 408 165 418 L 175 472 Q 90 482 60 470 Z"
+        fill="url(#hoodV3)" stroke="#2a2a40" stroke-width="1.5" />
+  <path d="M 340 420 Q 310 408 235 418 L 225 472 Q 310 482 340 470 Z"
+        fill="url(#hoodV3)" stroke="#2a2a40" stroke-width="1.5" />
 
-  <!-- 腕組み（左腕） -->
-  <path d="M 70 410 Q 90 400 160 410 L 170 460 Q 100 470 70 460 Z"
-        fill="url(#hoodGrad)" stroke="#2c2c45" stroke-width="1.5" />
-  <!-- 腕組み（右腕・上） -->
-  <path d="M 330 410 Q 310 400 240 410 L 230 460 Q 300 470 330 460 Z"
-        fill="url(#hoodGrad)" stroke="#2c2c45" stroke-width="1.5" />
+  <!-- 袖の縦ネオンライン（公式準拠：袖の長い緑ライン） -->
+  <path d="M 75 380 L 90 410 L 80 470 L 88 540" stroke="#4ade80" stroke-width="2.4" opacity="0.9" fill="none" stroke-linecap="round" />
+  <path d="M 325 380 L 310 410 L 320 470 L 312 540" stroke="#4ade80" stroke-width="2.4" opacity="0.9" fill="none" stroke-linecap="round" />
 
-  <!-- フード ネオン緑アクセント線（rei_visual.md「neon green accents」厳守） -->
-  <path d="M 90 360 L 105 410 L 90 460 L 95 540" stroke="#4ade80" stroke-width="2" opacity="0.85" fill="none" />
-  <path d="M 310 360 L 295 410 L 310 460 L 305 540" stroke="#4ade80" stroke-width="2" opacity="0.85" fill="none" />
-  <!-- フードのドローコード -->
-  <line x1="180" y1="345" x2="180" y2="430" stroke="#4ade80" stroke-width="2.4" stroke-linecap="round" opacity="0.7" />
-  <line x1="220" y1="345" x2="220" y2="430" stroke="#4ade80" stroke-width="2.4" stroke-linecap="round" opacity="0.7" />
-  <circle cx="180" cy="430" r="3" fill="#4ade80" opacity="0.9" />
-  <circle cx="220" cy="430" r="3" fill="#4ade80" opacity="0.9" />
+  <!-- 袖のREI ANALYTICS 円ロゴ（左袖） -->
+  <circle cx="115" cy="450" r="14" fill="#0f0f1a" stroke="#4ade80" stroke-width="1.4" />
+  <path d="M 107 458 L 110 442 L 115 452 L 120 442 L 123 458"
+        stroke="#4ade80" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
 
-  <!-- 後ろ髪（長め・流れ） -->
-  <path d="M 95 200 Q 80 320 110 470 L 145 470 Q 130 360 130 220 Z" fill="url(#hairGradV2)" />
-  <path d="M 305 200 Q 320 320 290 470 L 255 470 Q 270 360 270 220 Z" fill="url(#hairGradV2)" />
+  <!-- フード胸元の「REI」テキスト -->
+  <text x="200" y="455" text-anchor="middle" font-family="'JetBrains Mono', monospace"
+        font-weight="700" font-size="22" letter-spacing="6" fill="#4ade80" opacity="0.92">REI</text>
 
-  <!-- 顔（明るめ・アニメ寄り） -->
-  <ellipse cx="200" cy="225" rx="74" ry="86" fill="url(#faceGrad)" stroke="#4a4a68" stroke-width="1.5" />
+  <!-- ドローコード -->
+  <line x1="180" y1="355" x2="180" y2="440" stroke="#4ade80" stroke-width="2.6" stroke-linecap="round" opacity="0.85" />
+  <line x1="220" y1="355" x2="220" y2="440" stroke="#4ade80" stroke-width="2.6" stroke-linecap="round" opacity="0.85" />
+  <circle cx="180" cy="440" r="3.2" fill="#4ade80" />
+  <circle cx="220" cy="440" r="3.2" fill="#4ade80" />
 
-  <!-- 髪前バング（センター分け＋サイド） -->
-  <path d="M 128 165 Q 200 105 272 165
-           Q 270 195 240 195
-           Q 220 178 200 182
-           Q 180 178 160 195
-           Q 130 195 128 165 Z"
-        fill="url(#hairGradV2)" />
-  <!-- 前髪サイドの流れ -->
-  <path d="M 128 165 Q 115 195 122 280 Q 132 230 145 195 Z" fill="url(#hairGradV2)" />
-  <path d="M 272 165 Q 285 195 278 280 Q 268 230 255 195 Z" fill="url(#hairGradV2)" />
+  <!-- ===== 後ろ髪（長め・流れる） ===== -->
+  <path d="M 95 210 Q 70 320 100 480 L 145 480 Q 125 350 125 220 Z" fill="url(#hairV3)" />
+  <path d="M 305 210 Q 330 320 300 480 L 255 480 Q 275 350 275 220 Z" fill="url(#hairV3)" />
 
-  <!-- 髪のハイライト（艶・cyan tint） -->
-  <path d="M 165 130 Q 200 118 235 130 Q 220 145 200 145 Q 180 145 165 130 Z"
-        fill="#5a5a78" opacity="0.5" />
+  <!-- ===== 顔（アニメ寄り・少し丸め） ===== -->
+  <ellipse cx="200" cy="228" rx="72" ry="83" fill="url(#faceV3)" stroke="#564f70" stroke-width="1.2" />
 
-  <!-- 猫耳 左 -->
-  <polygon points="118,75 142,150 168,118" fill="#22223a" stroke="#4a4a68" stroke-width="1.5" stroke-linejoin="round" />
-  <polygon points="135,100 145,140 158,118" fill="#3a3a55" opacity="0.7" />
-  <polygon points="142,118 148,138 153,124" fill="#4ade80" opacity="0.55" />
-  <!-- 猫耳 右 -->
-  <polygon points="282,75 258,150 232,118" fill="#22223a" stroke="#4a4a68" stroke-width="1.5" stroke-linejoin="round" />
-  <polygon points="265,100 255,140 242,118" fill="#3a3a55" opacity="0.7" />
-  <polygon points="258,118 252,138 247,124" fill="#4ade80" opacity="0.55" />
+  <!-- ===== 前髪・サイドバング ===== -->
+  <!-- センター分け前髪 -->
+  <path d="M 132 168 Q 200 108 268 168
+           Q 270 195 240 192
+           Q 220 175 200 180
+           Q 180 175 160 192
+           Q 130 195 132 168 Z"
+        fill="url(#hairV3)" />
+  <!-- 左サイドバング（顔の左を縁取る） -->
+  <path d="M 132 168 Q 110 200 105 270 Q 118 230 135 200 Q 140 180 132 168 Z"
+        fill="url(#hairV3)" />
+  <!-- 右サイドバング -->
+  <path d="M 268 168 Q 290 200 295 270 Q 282 230 265 200 Q 260 180 268 168 Z"
+        fill="url(#hairV3)" />
+  <!-- 顔横の短い髪のすだれ（公式の特徴） -->
+  <path d="M 128 195 L 125 260 L 138 230 Z" fill="url(#hairV3)" opacity="0.85" />
+  <path d="M 272 195 L 275 260 L 262 230 Z" fill="url(#hairV3)" opacity="0.85" />
 
-  <!-- メガネフレーム（円・しっかり描く） -->
-  <circle cx="167" cy="232" r="28" stroke="#7a7aa0" stroke-width="2.5" fill="rgba(74,222,128,0.04)" />
-  <circle cx="233" cy="232" r="28" stroke="#7a7aa0" stroke-width="2.5" fill="rgba(74,222,128,0.04)" />
-  <line x1="195" y1="232" x2="205" y2="232" stroke="#7a7aa0" stroke-width="2.5" />
-  <!-- メガネのテンプル（耳側） -->
-  <line x1="139" y1="232" x2="125" y2="228" stroke="#7a7aa0" stroke-width="1.8" />
-  <line x1="261" y1="232" x2="275" y2="228" stroke="#7a7aa0" stroke-width="1.8" />
+  <!-- 髪のハイライト -->
+  <path d="M 165 130 Q 200 118 235 130 Q 220 142 200 142 Q 180 142 165 130 Z"
+        fill="#5e5878" opacity="0.6" />
 
-  <!-- 緑目（アニメ寄り・くっきり＋発光） -->
-  <ellipse cx="167" cy="234" rx="9" ry="10" fill="url(#eyeGlowV2)" />
-  <ellipse cx="233" cy="234" rx="9" ry="10" fill="url(#eyeGlowV2)" />
-  <!-- 目の本体（緑のアイリス） -->
-  <ellipse cx="167" cy="234" rx="6" ry="7" fill="#4ade80" opacity="0.95" />
-  <ellipse cx="233" cy="234" rx="6" ry="7" fill="#4ade80" opacity="0.95" />
-  <!-- 瞳孔（暗い・小さく） -->
-  <ellipse cx="167" cy="234" rx="2.5" ry="3" fill="#0f3a26" />
-  <ellipse cx="233" cy="234" rx="2.5" ry="3" fill="#0f3a26" />
-  <!-- ハイライト（アニメっぽさ重要） -->
-  <circle cx="170" cy="231" r="1.6" fill="#ffffff" />
-  <circle cx="236" cy="231" r="1.6" fill="#ffffff" />
-  <circle cx="164" cy="237" r="0.9" fill="#ffffff" opacity="0.7" />
-  <circle cx="230" cy="237" r="0.9" fill="#ffffff" opacity="0.7" />
+  <!-- ===== 猫耳（毛フサふわ感UP） ===== -->
+  <polygon points="120,72 144,150 170,118" fill="#1f1f30" stroke="#564f70" stroke-width="1.5" stroke-linejoin="round" />
+  <polygon points="135,98 146,140 160,118" fill="#3a3a52" opacity="0.8" />
+  <polygon points="142,116 148,138 154,124" fill="#4ade80" opacity="0.45" />
+  <polygon points="280,72 256,150 230,118" fill="#1f1f30" stroke="#564f70" stroke-width="1.5" stroke-linejoin="round" />
+  <polygon points="265,98 254,140 240,118" fill="#3a3a52" opacity="0.8" />
+  <polygon points="258,116 252,138 246,124" fill="#4ade80" opacity="0.45" />
 
-  <!-- まつ毛（上・薄く） -->
-  <path d="M 158 222 Q 167 218 176 222" stroke="#5a5a78" stroke-width="1.5" fill="none" stroke-linecap="round" />
-  <path d="M 224 222 Q 233 218 242 222" stroke="#5a5a78" stroke-width="1.5" fill="none" stroke-linecap="round" />
+  <!-- 髪の小さい毛束（耳近辺） -->
+  <path d="M 120 95 L 115 130 L 128 110 Z" fill="url(#hairV3)" />
+  <path d="M 280 95 L 285 130 L 272 110 Z" fill="url(#hairV3)" />
 
-  <!-- 鼻（極小・点） -->
-  <ellipse cx="200" cy="265" rx="1.5" ry="2" fill="#5a5a78" opacity="0.6" />
+  <!-- ===== 丸メガネ（しっかり） ===== -->
+  <circle cx="167" cy="232" r="29" stroke="#888caf" stroke-width="2.6" fill="rgba(74,222,128,0.04)" />
+  <circle cx="233" cy="232" r="29" stroke="#888caf" stroke-width="2.6" fill="rgba(74,222,128,0.04)" />
+  <line x1="196" y1="232" x2="204" y2="232" stroke="#888caf" stroke-width="2.6" />
+  <line x1="138" y1="232" x2="122" y2="228" stroke="#888caf" stroke-width="2" />
+  <line x1="262" y1="232" x2="278" y2="228" stroke="#888caf" stroke-width="2" />
 
-  <!-- 口（控えめな微笑） -->
-  <path d="M 188 286 Q 200 292 212 286" stroke="#7a7aa0" stroke-width="1.8" fill="none" stroke-linecap="round" />
+  <!-- ===== 緑目（アニメ大目・くっきり） ===== -->
+  <ellipse cx="167" cy="234" rx="10" ry="11" fill="url(#eyeV3)" />
+  <ellipse cx="233" cy="234" rx="10" ry="11" fill="url(#eyeV3)" />
+  <ellipse cx="167" cy="234" rx="7" ry="8" fill="#4ade80" />
+  <ellipse cx="233" cy="234" rx="7" ry="8" fill="#4ade80" />
+  <ellipse cx="167" cy="234" rx="3" ry="4" fill="#0a2e1a" />
+  <ellipse cx="233" cy="234" rx="3" ry="4" fill="#0a2e1a" />
+  <!-- アニメ風ハイライト（大小2粒） -->
+  <ellipse cx="170" cy="230" rx="2" ry="2.4" fill="#ffffff" />
+  <ellipse cx="236" cy="230" rx="2" ry="2.4" fill="#ffffff" />
+  <circle cx="163" cy="237" r="1.1" fill="#ffffff" opacity="0.85" />
+  <circle cx="229" cy="237" r="1.1" fill="#ffffff" opacity="0.85" />
 
-  <!-- 頬の淡いブラッシュ（cyber風・緑寄り） -->
-  <ellipse cx="148" cy="265" rx="10" ry="5" fill="#4ade80" opacity="0.12" />
-  <ellipse cx="252" cy="265" rx="10" ry="5" fill="#4ade80" opacity="0.12" />
+  <!-- まつ毛（上） -->
+  <path d="M 156 220 Q 167 215 178 220" stroke="#3a3a52" stroke-width="2" fill="none" stroke-linecap="round" />
+  <path d="M 222 220 Q 233 215 244 220" stroke="#3a3a52" stroke-width="2" fill="none" stroke-linecap="round" />
+
+  <!-- 頬の緑ブラッシュ -->
+  <ellipse cx="148" cy="268" rx="13" ry="6" fill="url(#cheekV3)" />
+  <ellipse cx="252" cy="268" rx="13" ry="6" fill="url(#cheekV3)" />
+
+  <!-- 鼻・口 -->
+  <ellipse cx="200" cy="265" rx="1.2" ry="2" fill="#564f70" opacity="0.7" />
+  <path d="M 189 287 Q 200 293 211 287" stroke="#888caf" stroke-width="2" fill="none" stroke-linecap="round" />
 </svg>

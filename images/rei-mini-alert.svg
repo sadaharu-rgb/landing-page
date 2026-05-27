@@ -1,32 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none" aria-hidden="true">
-  <!-- ミニチビ Rei（標準・微笑み）- 公式チビ準拠 -->
-  <!-- 後ろ髪 -->
+  <!-- ミニチビ Rei（注意・「⚠」付き） -->
   <path d="M 9 23 Q 7 32 10 39 L 15 39 Q 13 30 14 25 Z" fill="#2a2a40" />
   <path d="M 35 23 Q 37 32 34 39 L 29 39 Q 31 30 30 25 Z" fill="#2a2a40" />
-  <!-- 猫耳 -->
   <polygon points="10,12 16,4 18,14" fill="#1f1f30" stroke="#564f70" stroke-width="0.6" stroke-linejoin="round" />
   <polygon points="34,12 28,4 26,14" fill="#1f1f30" stroke="#564f70" stroke-width="0.6" stroke-linejoin="round" />
   <polygon points="13,12 16,7 17,13" fill="#4ade80" opacity="0.55" />
   <polygon points="31,12 28,7 27,13" fill="#4ade80" opacity="0.55" />
-  <!-- 顔 -->
   <circle cx="22" cy="24" r="11" fill="#4a4564" stroke="#564f70" stroke-width="0.8" />
-  <!-- 前髪 -->
   <path d="M 12 19 Q 22 11 32 19 Q 30 22 27 22 Q 22 18 17 22 Q 14 22 12 19 Z" fill="#2a2a40" />
-  <!-- サイドバング -->
   <path d="M 12 19 L 11 28 L 14 23 Z" fill="#2a2a40" />
   <path d="M 32 19 L 33 28 L 30 23 Z" fill="#2a2a40" />
-  <!-- メガネ -->
   <circle cx="17.5" cy="25" r="3.6" stroke="#888caf" stroke-width="0.7" fill="none" />
   <circle cx="26.5" cy="25" r="3.6" stroke="#888caf" stroke-width="0.7" fill="none" />
   <line x1="21" y1="25" x2="23" y2="25" stroke="#888caf" stroke-width="0.7" />
-  <!-- 緑目（大） -->
-  <circle cx="17.5" cy="25" r="2.1" fill="#4ade80" />
-  <circle cx="26.5" cy="25" r="2.1" fill="#4ade80" />
+  <!-- 大きめ・しっかり緑目（注意・凝視） -->
+  <circle cx="17.5" cy="25" r="2.3" fill="#4ade80" />
+  <circle cx="26.5" cy="25" r="2.3" fill="#4ade80" />
   <circle cx="18.2" cy="24.3" r="0.7" fill="#ffffff" />
   <circle cx="27.2" cy="24.3" r="0.7" fill="#ffffff" />
-  <!-- 微笑 -->
-  <path d="M 19 30 Q 22 31.5 25 30" stroke="#888caf" stroke-width="0.8" fill="none" stroke-linecap="round" />
-  <!-- 頬の緑 -->
+  <!-- 真一文字の口（無表情） -->
+  <line x1="19" y1="30" x2="25" y2="30" stroke="#888caf" stroke-width="0.9" stroke-linecap="round" />
   <ellipse cx="14" cy="28" rx="1.8" ry="0.9" fill="#4ade80" opacity="0.25" />
   <ellipse cx="30" cy="28" rx="1.8" ry="0.9" fill="#4ade80" opacity="0.25" />
+
+  <!-- ⚠ マーク（右上） -->
+  <polygon points="35,3 41,14 29,14" fill="#0f0f1a" stroke="#4ade80" stroke-width="1.2" stroke-linejoin="round" />
+  <line x1="35" y1="7" x2="35" y2="11" stroke="#4ade80" stroke-width="1.4" stroke-linecap="round" />
+  <circle cx="35" cy="13" r="0.6" fill="#4ade80" />
 </svg>
