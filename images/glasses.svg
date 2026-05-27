@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 32" fill="none" aria-hidden="true" stroke="currentColor" stroke-width="1.5">
+  <!-- 丸メガネ・ミニ装飾（Reiの象徴） -->
+  <circle cx="18" cy="16" r="12" />
+  <circle cx="62" cy="16" r="12" />
+  <line x1="30" y1="16" x2="50" y2="16" />
+</svg>

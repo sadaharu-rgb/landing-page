@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" fill="none" aria-hidden="true">
+  <!--
+    Rei character silhouette（rei_visual.md 準拠の抽象シルエット）
+    - 黒髪ロング・猫耳・丸メガネ・緑目・ダークフード
+    - 線は #2a2a40〜#3a3a55（背景 #13131f に対して微かに浮き上がる程度）
+    - 目だけ #4ade80 で薄く発光
+  -->
+  <defs>
+    <linearGradient id="hairGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2a40" />
+      <stop offset="1" stop-color="#1c1c2e" />
+    </linearGradient>
+    <radialGradient id="eyeGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4ade80" stop-opacity="0.85" />
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- フード後ろ -->
+  <path d="M 60 360 Q 90 280 200 280 Q 310 280 340 360 L 360 560 L 40 560 Z"
+        fill="#1a1a2e" stroke="#2c2c40" stroke-width="1.2" opacity="0.9" />
+
+  <!-- 髪後ろ（長め・流れ） -->
+  <path d="M 70 200 Q 60 320 90 460 L 130 460 Q 110 360 120 220 Z"
+        fill="url(#hairGrad)" opacity="0.85" />
+  <path d="M 330 200 Q 340 320 310 460 L 270 460 Q 290 360 280 220 Z"
+        fill="url(#hairGrad)" opacity="0.85" />
+
+  <!-- 顔輪郭 -->
+  <ellipse cx="200" cy="220" rx="78" ry="92"
+           fill="#2a2a40" stroke="#3a3a55" stroke-width="1.2" opacity="0.95" />
+
+  <!-- 髪前（バング） -->
+  <path d="M 122 170 Q 200 110 278 170 Q 280 195 250 185 Q 230 175 200 178 Q 170 175 150 185 Q 120 195 122 170 Z"
+        fill="url(#hairGrad)" />
+
+  <!-- サイドの髪 -->
+  <path d="M 122 175 L 105 320 Q 110 270 130 230 Z" fill="url(#hairGrad)" />
+  <path d="M 278 175 L 295 320 Q 290 270 270 230 Z" fill="url(#hairGrad)" />
+
+  <!-- 猫耳（左） -->
+  <polygon points="120,90 140,150 165,115" fill="#1c1c2e" stroke="#3a3a55" stroke-width="1.2" />
+  <polygon points="135,108 145,140 155,118" fill="#3a3a55" opacity="0.55" />
+  <!-- 猫耳（右） -->
+  <polygon points="280,90 260,150 235,115" fill="#1c1c2e" stroke="#3a3a55" stroke-width="1.2" />
+  <polygon points="265,108 255,140 245,118" fill="#3a3a55" opacity="0.55" />
+
+  <!-- 丸メガネ（フレーム） -->
+  <circle cx="168" cy="225" r="26" stroke="#5a5a78" stroke-width="2" fill="none" />
+  <circle cx="232" cy="225" r="26" stroke="#5a5a78" stroke-width="2" fill="none" />
+  <line x1="194" y1="225" x2="206" y2="225" stroke="#5a5a78" stroke-width="2" />
+
+  <!-- 緑目（メガネの中で微かに発光） -->
+  <circle cx="168" cy="225" r="14" fill="url(#eyeGlow)" />
+  <circle cx="232" cy="225" r="14" fill="url(#eyeGlow)" />
+  <circle cx="168" cy="225" r="3.5" fill="#4ade80" opacity="0.95" />
+  <circle cx="232" cy="225" r="3.5" fill="#4ade80" opacity="0.95" />
+
+  <!-- 口元（小さく・無表情） -->
+  <line x1="190" y1="285" x2="210" y2="285" stroke="#5a5a78" stroke-width="1.5" stroke-linecap="round" />
+
+  <!-- フードのドローコード -->
+  <line x1="180" y1="450" x2="178" y2="540" stroke="#3a3a55" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="220" y1="450" x2="222" y2="540" stroke="#3a3a55" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- フードのネオン緑アクセント線（rei_visual.md「neon green accents」） -->
+  <path d="M 130 420 L 145 460 L 145 540" stroke="#4ade80" stroke-width="1.3" opacity="0.55" fill="none" />
+  <path d="M 270 420 L 255 460 L 255 540" stroke="#4ade80" stroke-width="1.3" opacity="0.55" fill="none" />
+</svg>

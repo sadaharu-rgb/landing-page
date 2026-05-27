@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- OGP画像（1200x630）Rei公式ビジュアル準拠 -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f0f1a" />
+      <stop offset="1" stop-color="#13131f" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.7" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4ade80" stop-opacity="0.18" />
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="hairGradOg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2a40" />
+      <stop offset="1" stop-color="#1c1c2e" />
+    </linearGradient>
+    <radialGradient id="eyeGlowOg" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#4ade80" stop-opacity="0.85" />
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="gridOg" x="0" y="0" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M 64 0 L 0 0 0 64" stroke="rgba(255,255,255,0.03)" stroke-width="1" fill="none" />
+    </pattern>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#gridOg)" />
+  <rect width="1200" height="630" fill="url(#glow)" />
+
+  <!-- 左側：タイポ -->
+  <text x="80" y="240" font-family="'Noto Serif JP', serif" font-size="76" font-weight="700" fill="#e8e8f0">観測する人。</text>
+  <text x="80" y="335" font-family="'Noto Sans JP', sans-serif" font-size="64" font-weight="900" fill="#e8e8f0">
+    <tspan fill="#4ade80">数字を出す側</tspan>になる。
+  </text>
+  <text x="80" y="425" font-family="'JetBrains Mono', monospace" font-size="22" fill="#8a8aa0" letter-spacing="3">
+    @Rei_value — INDIE OBSERVER · RECORDING IN PROGRESS
+  </text>
+
+  <!-- 区切り線（短い罫線・editorial感） -->
+  <rect x="80" y="445" width="60" height="3" fill="#4ade80" />
+
+  <!-- 右側：Reiシルエット（縮小配置） -->
+  <g transform="translate(820, 90) scale(0.85)">
+    <!-- フード -->
+    <path d="M 60 360 Q 90 280 200 280 Q 310 280 340 360 L 360 560 L 40 560 Z"
+          fill="#1a1a2e" stroke="#2c2c40" stroke-width="1.2" />
+    <!-- 髪後ろ -->
+    <path d="M 70 200 Q 60 320 90 460 L 130 460 Q 110 360 120 220 Z" fill="url(#hairGradOg)" />
+    <path d="M 330 200 Q 340 320 310 460 L 270 460 Q 290 360 280 220 Z" fill="url(#hairGradOg)" />
+    <!-- 顔 -->
+    <ellipse cx="200" cy="220" rx="78" ry="92" fill="#2a2a40" stroke="#3a3a55" stroke-width="1.2" />
+    <!-- 髪前 -->
+    <path d="M 122 170 Q 200 110 278 170 Q 280 195 250 185 Q 230 175 200 178 Q 170 175 150 185 Q 120 195 122 170 Z" fill="url(#hairGradOg)" />
+    <path d="M 122 175 L 105 320 Q 110 270 130 230 Z" fill="url(#hairGradOg)" />
+    <path d="M 278 175 L 295 320 Q 290 270 270 230 Z" fill="url(#hairGradOg)" />
+    <!-- 猫耳 -->
+    <polygon points="120,90 140,150 165,115" fill="#1c1c2e" stroke="#3a3a55" stroke-width="1.2" />
+    <polygon points="135,108 145,140 155,118" fill="#3a3a55" opacity="0.55" />
+    <polygon points="280,90 260,150 235,115" fill="#1c1c2e" stroke="#3a3a55" stroke-width="1.2" />
+    <polygon points="265,108 255,140 245,118" fill="#3a3a55" opacity="0.55" />
+    <!-- メガネ -->
+    <circle cx="168" cy="225" r="26" stroke="#5a5a78" stroke-width="2" fill="none" />
+    <circle cx="232" cy="225" r="26" stroke="#5a5a78" stroke-width="2" fill="none" />
+    <line x1="194" y1="225" x2="206" y2="225" stroke="#5a5a78" stroke-width="2" />
+    <!-- 緑目 -->
+    <circle cx="168" cy="225" r="14" fill="url(#eyeGlowOg)" />
+    <circle cx="232" cy="225" r="14" fill="url(#eyeGlowOg)" />
+    <circle cx="168" cy="225" r="3.5" fill="#4ade80" />
+    <circle cx="232" cy="225" r="3.5" fill="#4ade80" />
+    <!-- 口 -->
+    <line x1="190" y1="285" x2="210" y2="285" stroke="#5a5a78" stroke-width="1.5" stroke-linecap="round" />
+    <!-- ネオン緑アクセント -->
+    <path d="M 130 420 L 145 460 L 145 540" stroke="#4ade80" stroke-width="1.3" opacity="0.55" fill="none" />
+    <path d="M 270 420 L 255 460 L 255 540" stroke="#4ade80" stroke-width="1.3" opacity="0.55" fill="none" />
+  </g>
+
+  <!-- 右下：単一ネオン緑ドット（rei_visual.md 厳守） -->
+  <circle cx="1150" cy="585" r="6" fill="#4ade80" />
+</svg>
