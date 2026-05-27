@@ -60,37 +60,37 @@ a {
   filter: drop-shadow(0 0 24px rgba(74, 222, 128, 0.05));
 }
 
-/* Hero 右側に大きく（rei_visual.md 「Right side: very faint Rei character silhouette」） */
+/* Hero 右側に大きく・はっきり（アニメ少女の気配を主張） */
 .rei-silhouette--hero-main {
   top: 50%;
-  right: -8%;
+  right: -4%;
   transform: translateY(-50%);
-  width: clamp(340px, 52vw, 620px);
-  opacity: 0.18;
+  width: clamp(360px, 56vw, 660px);
+  opacity: 0.55;
   animation: float-slow 16s ease-in-out infinite;
 }
 
-/* Hero 左下に小さく（モバイル時は非表示） */
+/* Hero 左下にサブ（モバイル時は非表示） */
 .rei-silhouette--hero-sub {
-  bottom: -10%;
-  left: -6%;
-  width: clamp(180px, 26vw, 280px);
-  opacity: 0.07;
+  bottom: -8%;
+  left: -4%;
+  width: clamp(200px, 28vw, 300px);
+  opacity: 0.30;
   animation: float-slow 22s ease-in-out infinite reverse;
   display: none;
 }
 
 @media (min-width: 900px) {
   .rei-silhouette--hero-sub { display: block; }
-  .rei-silhouette--hero-main { opacity: 0.22; }
+  .rei-silhouette--hero-main { opacity: 0.68; }
 }
 
-/* About セクションの右下に大きく */
+/* About セクションの右下に大型 */
 .rei-silhouette--about {
-  bottom: -8%;
-  right: -10%;
-  width: clamp(320px, 42vw, 540px);
-  opacity: 0.12;
+  bottom: -6%;
+  right: -8%;
+  width: clamp(340px, 44vw, 560px);
+  opacity: 0.42;
   z-index: 0;
   animation: float-slow 20s ease-in-out infinite;
 }
@@ -99,11 +99,11 @@ a {
 
 /* Footer 中央上部に薄く（離れすぎない・小さめ） */
 .rei-silhouette--footer {
-  top: -8%;
+  top: -10%;
   left: 50%;
   transform: translateX(-50%);
-  width: clamp(140px, 18vw, 200px);
-  opacity: 0.08;
+  width: clamp(160px, 20vw, 220px);
+  opacity: 0.30;
   z-index: 0;
 }
 
@@ -138,8 +138,8 @@ a {
 }
 
 @keyframes pulse-faint {
-  0%, 100% { opacity: 0.08; }
-  50%      { opacity: 0.12; }
+  0%, 100% { opacity: 0.22; }
+  50%      { opacity: 0.35; }
 }
 
 /* ヘッダーロゴの猫耳アイコン */
@@ -149,9 +149,88 @@ a {
   height: auto;
   color: var(--color-text);
   margin-left: 0.2rem;
-  opacity: 0.55;
+  opacity: 0.75;
   vertical-align: middle;
   filter: drop-shadow(0 0 6px var(--color-accent-glow));
+}
+
+/* ===== ミニReiチビ（散布用・あちこちに気配を撒く） ===== */
+
+/* section-label の先頭に置く小さいRei */
+.section-mini {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 0.45rem;
+  margin-top: -2px;
+  filter: drop-shadow(0 0 4px rgba(74, 222, 128, 0.3));
+  animation: rei-bob 4.5s ease-in-out infinite;
+}
+
+@keyframes rei-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-2px); }
+}
+
+/* section-label の罫線は ミニRei に置き換えたので非表示化 */
+.section-label::before { display: none; }
+
+/* stat / project / note カードの右上に Rei チビ */
+.card-mini {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  width: 26px;
+  height: 26px;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 3px rgba(74, 222, 128, 0.25));
+  transition: opacity 0.25s, transform 0.25s;
+  z-index: 1;
+}
+
+.stat-card,
+.project-card,
+.note-card {
+  position: relative;
+}
+
+.stat-card:hover .card-mini,
+.project-card:hover .card-mini,
+.note-card:hover .card-mini {
+  opacity: 1;
+  transform: rotate(-6deg) scale(1.1);
+}
+
+/* principle 番号バッジ内に小さく */
+.principle-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.principle-mini {
+  width: 18px;
+  height: 18px;
+  filter: drop-shadow(0 0 3px rgba(74, 222, 128, 0.4));
+}
+
+/* footer tagline の左右に並べる */
+.footer-mini {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin: 0 0.5rem;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 5px rgba(74, 222, 128, 0.35));
+}
+
+.footer-mini:first-child {
+  animation: rei-bob 5s ease-in-out infinite;
+}
+.footer-mini:last-child {
+  animation: rei-bob 5s ease-in-out infinite reverse;
 }
 
 /* ===== HEADER ===== */

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-  <!-- OGP画像（1200x630）Rei公式ビジュアル準拠 -->
+  <!-- OGP画像（1200x630）Rei v2 デザイン準拠 -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0f0f1a" />
@@ -9,20 +9,28 @@
       <stop offset="0" stop-color="#4ade80" stop-opacity="0.18" />
       <stop offset="1" stop-color="#4ade80" stop-opacity="0" />
     </radialGradient>
-    <linearGradient id="hairGradOg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#2a2a40" />
-      <stop offset="1" stop-color="#1c1c2e" />
-    </linearGradient>
-    <radialGradient id="eyeGlowOg" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#4ade80" stop-opacity="0.85" />
-      <stop offset="1" stop-color="#4ade80" stop-opacity="0" />
-    </radialGradient>
     <pattern id="gridOg" x="0" y="0" width="64" height="64" patternUnits="userSpaceOnUse">
       <path d="M 64 0 L 0 0 0 64" stroke="rgba(255,255,255,0.03)" stroke-width="1" fill="none" />
     </pattern>
+    <linearGradient id="hairGradOg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a3a55" />
+      <stop offset="1" stop-color="#22223a" />
+    </linearGradient>
+    <linearGradient id="hoodGradOg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22223a" />
+      <stop offset="1" stop-color="#16162a" />
+    </linearGradient>
+    <linearGradient id="faceGradOg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d3d56" />
+      <stop offset="1" stop-color="#33334a" />
+    </linearGradient>
+    <radialGradient id="eyeGlowOg" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#4ade80" stop-opacity="1" />
+      <stop offset="0.6" stop-color="#4ade80" stop-opacity="0.4" />
+      <stop offset="1" stop-color="#4ade80" stop-opacity="0" />
+    </radialGradient>
   </defs>
 
-  <!-- 背景 -->
   <rect width="1200" height="630" fill="url(#bg)" />
   <rect width="1200" height="630" fill="url(#gridOg)" />
   <rect width="1200" height="630" fill="url(#glow)" />
@@ -35,45 +43,65 @@
   <text x="80" y="425" font-family="'JetBrains Mono', monospace" font-size="22" fill="#8a8aa0" letter-spacing="3">
     @Rei_value — INDIE OBSERVER · RECORDING IN PROGRESS
   </text>
-
-  <!-- 区切り線（短い罫線・editorial感） -->
   <rect x="80" y="445" width="60" height="3" fill="#4ade80" />
 
-  <!-- 右側：Reiシルエット（縮小配置） -->
-  <g transform="translate(820, 90) scale(0.85)">
+  <!-- 右側：Rei v2 -->
+  <g transform="translate(770, 70) scale(1.0)">
     <!-- フード -->
-    <path d="M 60 360 Q 90 280 200 280 Q 310 280 340 360 L 360 560 L 40 560 Z"
-          fill="#1a1a2e" stroke="#2c2c40" stroke-width="1.2" />
-    <!-- 髪後ろ -->
-    <path d="M 70 200 Q 60 320 90 460 L 130 460 Q 110 360 120 220 Z" fill="url(#hairGradOg)" />
-    <path d="M 330 200 Q 340 320 310 460 L 270 460 Q 290 360 280 220 Z" fill="url(#hairGradOg)" />
+    <path d="M 40 360 Q 60 270 200 260 Q 340 270 360 360 L 380 560 L 20 560 Z" fill="url(#hoodGradOg)" stroke="#2c2c45" stroke-width="1.5" />
+    <path d="M 95 340 Q 130 320 200 320 Q 270 320 305 340 L 305 380 Q 270 360 200 360 Q 130 360 95 380 Z" fill="#1a1a2e" />
+    <!-- 腕組み -->
+    <path d="M 70 410 Q 90 400 160 410 L 170 460 Q 100 470 70 460 Z" fill="url(#hoodGradOg)" stroke="#2c2c45" stroke-width="1.5" />
+    <path d="M 330 410 Q 310 400 240 410 L 230 460 Q 300 470 330 460 Z" fill="url(#hoodGradOg)" stroke="#2c2c45" stroke-width="1.5" />
+    <!-- フード ネオン緑 -->
+    <path d="M 90 360 L 105 410 L 90 460 L 95 540" stroke="#4ade80" stroke-width="2" opacity="0.85" fill="none" />
+    <path d="M 310 360 L 295 410 L 310 460 L 305 540" stroke="#4ade80" stroke-width="2" opacity="0.85" fill="none" />
+    <line x1="180" y1="345" x2="180" y2="430" stroke="#4ade80" stroke-width="2.4" stroke-linecap="round" opacity="0.7" />
+    <line x1="220" y1="345" x2="220" y2="430" stroke="#4ade80" stroke-width="2.4" stroke-linecap="round" opacity="0.7" />
+    <circle cx="180" cy="430" r="3" fill="#4ade80" opacity="0.9" />
+    <circle cx="220" cy="430" r="3" fill="#4ade80" opacity="0.9" />
+    <!-- 後ろ髪 -->
+    <path d="M 95 200 Q 80 320 110 470 L 145 470 Q 130 360 130 220 Z" fill="url(#hairGradOg)" />
+    <path d="M 305 200 Q 320 320 290 470 L 255 470 Q 270 360 270 220 Z" fill="url(#hairGradOg)" />
     <!-- 顔 -->
-    <ellipse cx="200" cy="220" rx="78" ry="92" fill="#2a2a40" stroke="#3a3a55" stroke-width="1.2" />
-    <!-- 髪前 -->
-    <path d="M 122 170 Q 200 110 278 170 Q 280 195 250 185 Q 230 175 200 178 Q 170 175 150 185 Q 120 195 122 170 Z" fill="url(#hairGradOg)" />
-    <path d="M 122 175 L 105 320 Q 110 270 130 230 Z" fill="url(#hairGradOg)" />
-    <path d="M 278 175 L 295 320 Q 290 270 270 230 Z" fill="url(#hairGradOg)" />
+    <ellipse cx="200" cy="225" rx="74" ry="86" fill="url(#faceGradOg)" stroke="#4a4a68" stroke-width="1.5" />
+    <!-- 前髪 -->
+    <path d="M 128 165 Q 200 105 272 165 Q 270 195 240 195 Q 220 178 200 182 Q 180 178 160 195 Q 130 195 128 165 Z" fill="url(#hairGradOg)" />
+    <path d="M 128 165 Q 115 195 122 280 Q 132 230 145 195 Z" fill="url(#hairGradOg)" />
+    <path d="M 272 165 Q 285 195 278 280 Q 268 230 255 195 Z" fill="url(#hairGradOg)" />
+    <path d="M 165 130 Q 200 118 235 130 Q 220 145 200 145 Q 180 145 165 130 Z" fill="#5a5a78" opacity="0.5" />
     <!-- 猫耳 -->
-    <polygon points="120,90 140,150 165,115" fill="#1c1c2e" stroke="#3a3a55" stroke-width="1.2" />
-    <polygon points="135,108 145,140 155,118" fill="#3a3a55" opacity="0.55" />
-    <polygon points="280,90 260,150 235,115" fill="#1c1c2e" stroke="#3a3a55" stroke-width="1.2" />
-    <polygon points="265,108 255,140 245,118" fill="#3a3a55" opacity="0.55" />
+    <polygon points="118,75 142,150 168,118" fill="#22223a" stroke="#4a4a68" stroke-width="1.5" stroke-linejoin="round" />
+    <polygon points="135,100 145,140 158,118" fill="#3a3a55" opacity="0.7" />
+    <polygon points="142,118 148,138 153,124" fill="#4ade80" opacity="0.55" />
+    <polygon points="282,75 258,150 232,118" fill="#22223a" stroke="#4a4a68" stroke-width="1.5" stroke-linejoin="round" />
+    <polygon points="265,100 255,140 242,118" fill="#3a3a55" opacity="0.7" />
+    <polygon points="258,118 252,138 247,124" fill="#4ade80" opacity="0.55" />
     <!-- メガネ -->
-    <circle cx="168" cy="225" r="26" stroke="#5a5a78" stroke-width="2" fill="none" />
-    <circle cx="232" cy="225" r="26" stroke="#5a5a78" stroke-width="2" fill="none" />
-    <line x1="194" y1="225" x2="206" y2="225" stroke="#5a5a78" stroke-width="2" />
+    <circle cx="167" cy="232" r="28" stroke="#7a7aa0" stroke-width="2.5" fill="rgba(74,222,128,0.04)" />
+    <circle cx="233" cy="232" r="28" stroke="#7a7aa0" stroke-width="2.5" fill="rgba(74,222,128,0.04)" />
+    <line x1="195" y1="232" x2="205" y2="232" stroke="#7a7aa0" stroke-width="2.5" />
+    <line x1="139" y1="232" x2="125" y2="228" stroke="#7a7aa0" stroke-width="1.8" />
+    <line x1="261" y1="232" x2="275" y2="228" stroke="#7a7aa0" stroke-width="1.8" />
     <!-- 緑目 -->
-    <circle cx="168" cy="225" r="14" fill="url(#eyeGlowOg)" />
-    <circle cx="232" cy="225" r="14" fill="url(#eyeGlowOg)" />
-    <circle cx="168" cy="225" r="3.5" fill="#4ade80" />
-    <circle cx="232" cy="225" r="3.5" fill="#4ade80" />
-    <!-- 口 -->
-    <line x1="190" y1="285" x2="210" y2="285" stroke="#5a5a78" stroke-width="1.5" stroke-linecap="round" />
-    <!-- ネオン緑アクセント -->
-    <path d="M 130 420 L 145 460 L 145 540" stroke="#4ade80" stroke-width="1.3" opacity="0.55" fill="none" />
-    <path d="M 270 420 L 255 460 L 255 540" stroke="#4ade80" stroke-width="1.3" opacity="0.55" fill="none" />
+    <ellipse cx="167" cy="234" rx="9" ry="10" fill="url(#eyeGlowOg)" />
+    <ellipse cx="233" cy="234" rx="9" ry="10" fill="url(#eyeGlowOg)" />
+    <ellipse cx="167" cy="234" rx="6" ry="7" fill="#4ade80" />
+    <ellipse cx="233" cy="234" rx="6" ry="7" fill="#4ade80" />
+    <ellipse cx="167" cy="234" rx="2.5" ry="3" fill="#0f3a26" />
+    <ellipse cx="233" cy="234" rx="2.5" ry="3" fill="#0f3a26" />
+    <circle cx="170" cy="231" r="1.6" fill="#ffffff" />
+    <circle cx="236" cy="231" r="1.6" fill="#ffffff" />
+    <!-- まつ毛・鼻・口 -->
+    <path d="M 158 222 Q 167 218 176 222" stroke="#5a5a78" stroke-width="1.5" fill="none" stroke-linecap="round" />
+    <path d="M 224 222 Q 233 218 242 222" stroke="#5a5a78" stroke-width="1.5" fill="none" stroke-linecap="round" />
+    <ellipse cx="200" cy="265" rx="1.5" ry="2" fill="#5a5a78" opacity="0.6" />
+    <path d="M 188 286 Q 200 292 212 286" stroke="#7a7aa0" stroke-width="1.8" fill="none" stroke-linecap="round" />
+    <!-- 頬ブラッシュ -->
+    <ellipse cx="148" cy="265" rx="10" ry="5" fill="#4ade80" opacity="0.12" />
+    <ellipse cx="252" cy="265" rx="10" ry="5" fill="#4ade80" opacity="0.12" />
   </g>
 
-  <!-- 右下：単一ネオン緑ドット（rei_visual.md 厳守） -->
+  <!-- 右下：単一ネオン緑ドット -->
   <circle cx="1150" cy="585" r="6" fill="#4ade80" />
 </svg>
